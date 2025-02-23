@@ -1,4 +1,4 @@
-name: Deploy Spring Boot Gradle Project
+name: Deploy Spring Boot Gradle Projects
 
 on:
   push:
