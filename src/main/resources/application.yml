@@ -1,0 +1,39 @@
+spring:
+  jpa:
+    hibernate:    
+      ddl-auto: update
+  datasource:
+     url: jdbc:mysql://${RDS_HOSTNAME}:${RDS_PORT}/${RDS_DB_NAME}
+     username: ${RDS_USERNAME}
+     password: ${RDS_PASSWORD}
+#     url: jdbc:mysql://localhost:$3306/patton_chms_server_rep
+#     username: root
+#     password: sadmin
+  mail:
+    username: pattonnoreply@gmail.com
+    password: Patton@123
+    host: smtp.gmail.com
+    properties.mail.smtp:
+        auth: true
+        starttls.enable: true
+        ssl.trust: smtp.gmail.com
+server:
+   port: 5000
+logging:
+  level:
+#    org.hibernate.SQL: DEBUG
+#    org.hibernate.type.descriptor.sql: DEBUG  
+    web: info
+jwtsecret: authExample
+#debug: true
+#  mvc: 
+#    throw-exception-if-no-handler-found: true
+
+#jdbc:mysql://localhost:3306/patton_chms_server_rep
+#root
+
+#RDS_HOSTNAME  database-dev.c5avcp4lba42.us-east-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: mappedBy reference an unknown target entity property: com.chmsaws.pattonapp.entity.Lead.bucket in com.chmsaws.pattonapp.entity.Bucket.leads2.rds.amazonaws.com
+#RDS_PORT  3306
+#RDS_DB_NAME aws_patton_chms_dev
+#RDS_USERNAME root
+#RDS_PASSWORD patton123

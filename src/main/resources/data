@@ -1,0 +1,5 @@
+insert into USER_BUCKET	(USER_ID, BUCKET_ID ) values ('jay123',2001);
+insert into USER_BUCKET (USER_ID, BUCKET_ID ) values ('may123',2002);
+insert into USER_BUCKET	(USER_ID, BUCKET_ID ) values ('jay123',2003);
+insert into USER_BUCKET (USER_ID, BUCKET_ID ) values ('may123',2003);
+insert into USER_BUCKET	(USER_ID, BUCKET_ID ) values ('hay123',2001);
